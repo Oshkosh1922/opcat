@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concatenation Adventure with OP_CAT 🐱🧙‍♂️</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=YourCoolFontName&display=swap" rel="stylesheet">
+</head>
+<header>
+    <nav>
+        <a href="good.html" class="nav-link">Good Reasons</a>
+        <a href="index.html" class="nav-logo">
+            <img src="images/sub.png" alt="Logo">
+        </a>
+        <a href="bad_idea.html" class="nav-link">Don't Do It</a>
+    </nav>
+</header>
+<body>
+    <video autoplay loop muted playsinline id="backgroundVideo">
+        <source src="images/cats.mp4" type="video/mp4">
+        Oops get a better browser, jk 
+    </video>
+
+    <div class="container">
+        <h1>Lets see hypothetically how this could be bad</h1>
+        <p>There is a process before new opcode can be used, so thing like below would not happen</p>
+        <div class="input-area">
+            <input type="text" id="string1" placeholder="Enter first part of the spell">
+            <input type="text" id="string2" placeholder="Enter second part of the spell">
+            <button onclick="concatenate()">Cast the Spell!</button>
+        </div>
+        <div id="result" class="result"></div>
+        <div class="code-simulation">
+            <h2>Cats on Cat Knip: OP_CAT in Action</h2>
+            <pre id="fakeCodes"></pre>
+            <div id="buttonContainer" style="display: none;">
+                <button id="whyOpCatButton" onclick="openPopup()">How is this bad?</button>
+                <span class="blinking-arrow">➤</span>
+            </div>
+            <div id="cloudPopup" class="cloud-popup">
+                <div class="cloud-content">
+                    <span class="close-btn" onclick="closePopup()">&times;</span>
+                    <h1>COMMUNITY WONT LET THIS HAPPEN BUT...</h1>
+                <h2>OP_CAT HYPOTHETICALSIESOUSISCAL</h2>
+                <p><strong> Script Execution Complexity:</strong> If OP_CAT is used extensively in a script, it can increase the complexity of script execution. Concatenating large strings or data repeatedly may consume more computational resources during script validation, potentially leading to slower transaction processing.</p>
+                <p><strong>Transaction Malleability:</strong> While not directly caused by OP_CAT, the ability to manipulate transaction data through script operations, including concatenation, can lead to transaction malleability. This can result in issues such as double-spending, confusion, and disputes if not handled correctly.</p>
+                <p><strong>Smart Contract Vulnerabilities:</strong> The introduction of OP_CAT could potentially enable new ways to craft malicious smart contracts. If not carefully reviewed and audited, these contracts might have unintended vulnerabilities or could disrupt the expected behavior of smart contracts.</p>
+                <p><strong>Blockchain Bloat:</strong> Excessive and unnecessary use of OP_CAT, especially with large data, can result in bloated transactions. This can increase the size of the blockchain and require more storage and bandwidth resources for network participants.</p>
+                <p><strong>Amplified Spam Attacks:</strong> Malicious actors may exploit the concatenation capabilities of OP_CAT to generate a large number of spam transactions. This could potentially overload the network and disrupt normal transaction processing..</p>
+                <p>If OP_CAT is misused or if malicious actors take advantage of its capabilities, it could lead to chaos in the Bitcoin network. This chaos could manifest as delays in transaction processing, disputes over transaction validity, and overall confusion among network participants.</p>
+                <p>Disclaimer: No real cats were used in the making of this opcode. Remember, with great power comes great responsibility – use `OP_CAT` wisely!</p>
+            </div>
+    
+        </div>
+        
+    </div>
+    <div id="cloudPopup" class="cloud-popup">
+       
+    </div>
+   
+    <script src="js/script.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
